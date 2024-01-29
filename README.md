@@ -12,11 +12,10 @@
  ![offline customized advertising usecase](https://github.com/chansol1604/project_Ai_ad/assets/145517821/0781a8a6-a40d-484f-965e-cf2484a0370a)
 
 * sequence diagram
- ![sequence](https://github.com/chansol1604/project_Ai_ad/assets/58240527/91651f74-5f6e-4bb2-a9ee-ec11fae0d8ae)
-
+  ![sequence](https://github.com/chansol1604/project_Ai_ad/assets/58240527/91651f74-5f6e-4bb2-a9ee-ec11fae0d8ae)
 
 * class diagram
- ![class](https://github.com/chansol1604/project_Ai_ad/assets/58240527/fa44133e-3252-4b91-83bc-3efd578f59bd)
+  ![class](https://github.com/chansol1604/project_Ai_ad/assets/58240527/fa44133e-3252-4b91-83bc-3efd578f59bd)
 
 
   
@@ -66,13 +65,15 @@ python3 main.py
      - 연령, 성별, 감정 인식 모델: 참고 래거시 코드 추가
      - 연령, 성별에 따른 음료 추천 모델: 자체 학습 모델 개발, *********** 폴더 경로 추가 ***************
      - 아이트래킹:
-       1) 홍채 원 검출 알고리즘
+      1) 홍채 원 검출 알고리즘
        https://www.researchgate.net/profile/Kwanggi-Kim/publication/264147873_A_Novel_Circle_Detection_Algorithm_for_Iris_Segmentation/links/5418cc630cf203f155adb6bf/A-Novel-Circle-Detection-Algorithm-for-Iris-Segmentation.pdf
       2) opencv로 얼굴 랜드마크 활용하기
        https://velog.io/@mjkiim_0217/OpenCV-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EC%96%BC%EA%B5%B4%EC%9D%B8%EC%8B%9D-%EC%96%B4%EB%85%B8%EC%9E%89-%EC%98%A4%EB%A0%8C%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0
       3) 동공 검출 알고리즘
        https://towardsdatascience.com/real-time-eye-tracking-using-opencv-and-dlib-b504ca724ac6
        https://towardsdatascience.com/real-time-eye-tracking-using-opencv-and-dlib-b504ca724ac6
+      4) eye tracking 모델(/eye_tracking/shape_predictor_68_face_landmarks.dat)
+       https://github.com/godeastone/eyetracking
 
   2. USB to Serial in Linux
      
