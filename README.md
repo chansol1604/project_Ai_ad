@@ -69,8 +69,8 @@ source ./run.sh
    - 김혜경. "연령과 성별에 따른 음식 기호도 조사." (2004).
      
   1. AI 모델
-     - 연령, 성별, 감정 인식 모델: 참고 래거시 코드 추가
-     - 연령, 성별에 따른 음료 추천 모델: 자체 학습 모델 개발, *********** 폴더 경로 추가 ***************
+     - 연령, 성별, 감정 인식 모델: https://github.com/openvinotoolkit/open_model_zoo
+     - 연령, 성별에 따른 음료 추천 모델: 자체 학습 모델 개발, recommendation_datasets.csv, LCS/recommendation_ai.py
      - 아이트래킹:
        1) 홍채 원 검출 알고리즘
        https://www.researchgate.net/profile/Kwanggi-Kim/publication/264147873_A_Novel_Circle_Detection_Algorithm_for_Iris_Segmentation/links/5418cc630cf203f155adb6bf/A-Novel-Circle-Detection-Algorithm-for-Iris-Segmentation.pdf
