@@ -47,7 +47,7 @@ data_path = sorted(glob.glob('sample/*.mp4'))
 
 video = cv2.VideoCapture(data_path[predicted_class])
 
-new_size = (800, 600)
+new_size = (1920, 1080)
 
 cap = cv2.VideoCapture(0)
 
@@ -59,7 +59,11 @@ eye_check = 0
 flag = 0
 count = 0
 eye_count = 0
-
+blue = (255, 0, 0)
+green= (0, 255, 0)
+red= (0, 0, 255)
+white= (255, 255, 255) 
+font =  cv2.FONT_HERSHEY_PLAIN
 
 def eye_tracking():    
     global eye_check
@@ -75,7 +79,7 @@ def eye_tracking():
         img_gray_gaussian = cv2.GaussianBlur(gray, (5, 5), 0)  # 가우시안 필터 적용
         # 얼굴 검출
         faces = detector(img_gray_gaussian)
-
+        eye_check = 0
         for face in faces:
             # 얼굴에서 눈 영역 찾기
             landmarks = predictor(gray, face)
@@ -136,12 +140,13 @@ def eye_tracking():
 
             # 보정된 눈동자 중심 좌표 출력
             print(f'Left Eye Center: {left_eye_center_smoothed},  Right Eye Center: {right_eye_center_smoothed}')
-            if 330 <= left_eye_center_smoothed[0] <= 400:   # 모니터 양끝을 보고 값 측정해서 조절 필요
+            if 310 <= left_eye_center_smoothed[0] <= 400:   # 모니터 양끝을 보고 값 측정해서 조절 필요
                 eye_check = 1
                 eye_count += 1
             else:
                 eye_check = 0
-            count += 1
+        count += 1
+        
 
     # return eye_check
 
@@ -162,11 +167,17 @@ while video.isOpened():
     cv2.namedWindow('frame', cv2.WINDOW_NORMAL) 
     cv2.setWindowProperty('frame', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
-    # frame =cv2.resize(frame, new_size)
+    frame =cv2.resize(frame, new_size)
     if not ret:
         print("프레임을 수신할 수 없습니다(스트림 끝?). 종료 중 ...")
         break
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    if eye_check == 0:
+        cv2.putText(frame, "Look at me!", (100, 150), font, 10, red, 5)
+        cv2.circle(frame, (50, 100), 10, red, -1)
+    else:
+        cv2.circle(frame, (50, 100), 10, blue, -1)
+
+    # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     cv2.imshow('frame', frame)
     if cv2.waitKey(42) == ord('q'):
         break
