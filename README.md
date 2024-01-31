@@ -58,7 +58,8 @@ source ./run.sh
 
 ## Output
 
-* ![Uploading Screenshot from 2024-01-31 15-38-09.png…]()
+* ![Screenshot from 2024-01-31 15-38-09](https://github.com/chansol1604/project_Ai_ad/assets/58240527/27b80ff3-bd7e-43ef-9074-55cfd3ea24d1)
+
 
 * ![Screenshot from 2024-01-31 15-38-20](https://github.com/chansol1604/project_Ai_ad/assets/58240527/1845635c-a1a7-43de-9258-07582d691941)
 
