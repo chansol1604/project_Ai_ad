@@ -35,10 +35,13 @@ pip install -r requirements.txt
 
 * USB to Serial 통신(USART)를 위해 pyserial 설치
 * 시리얼 통신을 하고자 하는 장치가 잘 연결됐는지 확인 및 읽기/쓰기 권한 부여
+* openvino 설치 필요 https://docs.openvino.ai/2023.2/openvino_docs_install_guides_installing_openvino_from_archive_linux.html
+* open_model_zoo 모델 필요
+https://github.com/openvinotoolkit/open_model_zoo 
+
 ```shell
 sudo pip3 install pyserial
-ls -l /dev/ttyA*
-sudo chmod 777 /dev/[장치명]
+
 ```
 
 ## Steps to run
