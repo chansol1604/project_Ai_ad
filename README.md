@@ -1,4 +1,4 @@
-# Project ABC
+# 한잔해
 
 * 맞춤형 음료 추천, 광고 시스템
   1. 사람의 성별, 나이, 표정을 인식한 뒤, 추천 AI를 이용해 그에 맞는 음료의 광고를 추천해 준다.
@@ -50,12 +50,14 @@ cd ~/xxxx
 source .venv/bin/activate
 
 cd /project_Ai_ad
-python3 main.py
+source ./run.sh
 ```
 
 ## Output
 
-* (프로젝트 실행 화면 캡쳐)
+* ![Uploading Screenshot from 2024-01-31 15-38-09.png…]()
+
+* ![Screenshot from 2024-01-31 15-38-20](https://github.com/chansol1604/project_Ai_ad/assets/58240527/1845635c-a1a7-43de-9258-07582d691941)
 
 
 ## Appendix
